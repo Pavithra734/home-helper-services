@@ -272,6 +272,6 @@ Spring Security is included in the project, and passwords are encrypted using BC
 
 ## Author
 
-**Pavithra**
+**Pavithra Mekala**
 
 GitHub: [Pavithra734](https://github.com/Pavithra734)

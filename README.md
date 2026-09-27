@@ -30,7 +30,7 @@ A Spring Boot REST API for managing a Home Helper Service application. The appli
 
 ## Project Structure
 
-\```text
+```text
 HomeHelperServices
 ├── src
 │   ├── main
@@ -53,7 +53,7 @@ HomeHelperServices
 ├── mvnw.cmd
 ├── .gitignore
 └── README.md
-\```
+```
 
 ## Main Modules
 
@@ -122,7 +122,7 @@ Provides APIs for:
 
 ### Customer APIs
 
-\```text
+```text
 POST   /api/customers/register
 POST   /api/customers/login
 GET    /api/customers
@@ -130,11 +130,11 @@ GET    /api/customers/{id}
 PUT    /api/customers/{id}
 DELETE /api/customers/{id}
 GET    /api/customers/{id}/bookings
-\```
+```
 
 ### Helper APIs
 
-\```text
+```text
 POST   /api/helpers/register
 POST   /api/helpers/login
 GET    /api/helpers
@@ -142,11 +142,11 @@ GET    /api/helpers/{id}
 PUT    /api/helpers/{id}
 DELETE /api/helpers/{id}
 GET    /api/helpers/{id}/bookings
-\```
+```
 
 ### Booking APIs
 
-\```text
+```text
 POST   /api/bookings
 GET    /api/bookings
 GET    /api/bookings/{id}
@@ -155,21 +155,21 @@ GET    /api/bookings/helper/{helperId}
 PUT    /api/bookings/{id}
 PUT    /api/bookings/{id}/status
 DELETE /api/bookings/{id}
-\```
+```
 
 ### Payment APIs
 
-\```text
+```text
 POST   /api/payments
 GET    /api/payments
 GET    /api/payments/{id}
 GET    /api/payments/booking/{bookingId}
 PUT    /api/payments/{id}
-\```
+```
 
 ### Admin APIs
 
-\```text
+```text
 POST   /api/admin/login
 GET    /api/admin/customers
 GET    /api/admin/customers/{id}
@@ -179,7 +179,7 @@ GET    /api/admin/bookings
 GET    /api/admin/bookings/{id}
 GET    /api/admin/payments
 GET    /api/admin/payments/{id}
-\```
+```
 
 ## Database
 
@@ -187,65 +187,65 @@ The application uses MySQL.
 
 Database configuration is maintained in:
 
-\```text
+```text
 src/main/resources/application.properties
-\```
+```
 
 The project uses Spring Data JPA and Hibernate for database operations.
 
 ## Running the Application
 
-1. **Clone the repository**
+### 1. Clone the Repository
 
-\```bash
+```bash
 git clone https://github.com/Pavithra734/home-helper-services.git
-\```
+```
 
-2. **Open the project**
+### 2. Open the Project
 
 Open the project in Eclipse, IntelliJ IDEA, or another Java IDE.
 
-3. **Configure MySQL**
+### 3. Configure MySQL
 
 Create the required MySQL database and update the database configuration in:
 
-\```text
+```text
 application.properties
-\```
+```
 
-4. **Run the application**
+### 4. Run the Application
 
 Using Maven Wrapper:
 
-\```bash
+```bash
 mvnw spring-boot:run
-\```
+```
 
 Or run the main Spring Boot class:
 
-\```text
+```text
 HomeHelperServicesApplication.java
-\```
+```
 
 The application runs on:
 
-\```text
+```text
 http://localhost:8080
-\```
+```
 
 ## API Testing
 
 The REST APIs were tested using Postman.
 
-Example:
+### Customer Registration
 
-\```text
+```text
 POST http://localhost:8080/api/customers/register
-\```
+```
 
 Example request:
 
-\```json
+```json
 {
   "name": "Pavithra",
   "email": "pavithra@gmail.com",
@@ -253,7 +253,7 @@ Example request:
   "phone": "9876543210",
   "address": "Hyderabad"
 }
-\```
+```
 
 ## Exception Handling
 
@@ -274,4 +274,4 @@ Spring Security is included in the project, and passwords are encrypted using BC
 
 **Pavithra**
 
-GitHub: [https://github.com/Pavithra734](https://github.com/Pavithra734)
+GitHub: [Pavithra734](https://github.com/Pavithra734)
